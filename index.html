@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trevel2</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./style/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="headr-top_big">
+      <div class="container">
+        <div class="header-top">
+          <a class="header-logo" href="#"><img src="./images/logo-img.svg" alt="logo" class="logo-img"><img
+              class="logo-text" src="./images/logo-text.svg"  alt="logo">
+          </a>
+          <div class="header__nav">
+            <ul class="header-list">
+              <li><a href="#" class="header-link">How It Works</a></li>
+              <li><a href="#steps" class="header-link">Plan Your Trip</a></li>
+              <li><a href="#destinations" class="header-link">Destinations</a></li>
+              <li><a href="#travel-stories" class="header-link">Travel Stories</a></li>
+            </ul>
+          </div>
+          <button type="button" class="header__button button" onclick="window['loginModal'].showModal(); openLogin()">
+            Login
+          </button>
+          <button type="button" class="header__button-mobile" onclick="window['menuMobail'].showModal(); openMenu()">
+            <img src="./images/menu-burger.svg" alt="Moba menu" class="menu-burger">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header-bottom">
+        <h1 class="header-title">Explore the beauty of the World</h1>
+        <div class="header-text">Receive personalized recommendations for countries, hotels, activities and more
+        </div>
+        <div class="header-dia">
+          <p class="text-dia">What would you like to do?</p>
+          <a href="#" class="dia-bt button">Start Planning</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <dialog id="loginModal">
+    <div class="popup-container">
+      <h1 class="form-title">Log in to your account</h1>
+      <div class="form-link">
+        <a href="#" class="form-link__facebook">
+          <img src="./images/Facebook-icon.svg" alt="Logo Facebook">
+          Sign In with Facebook
+        </a>
+      </div>
+      <div class="form-link-white">
+        <a href="#" class="form-link-white__google">
+          <img src="./images/Google-icon.svg" alt="Logo form-link__google">
+          Sign In with Google
+        </a>
+      </div>
+      <div class="line">
+        <div class="line-left"></div>
+        <p class="line__text">or</p>
+        <div class="line-right"></div>
+      </div>
+      <form method="dialog" action="#" class="autorization">
+        <div class="form__block">
+          <label for="email" class="label-text">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="bbbb@gmail.com" required class="block-input">
+        </div>
+        <div class="form__block">
+          <label for="password" class="label-text">Password</label>
+          <input type="password" id="password" name="password" placeholder="password" required class="block-input">
+        </div>
+        <div class="button-form">
+          <button class="button-input button" type="submit">Sign In</button>
+        </div>
+      </form>
+      <a href="#" class="forgot-password">Forgot Your Password?</a>
+      <div class="line--solid"></div>
+      <div class="registration-have">
+        <p>Don’t have an account? <a href="#" onclick="switchToRegister(event)" class="register">Register</a></p>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="registerModal">
+    <div class="popup-container">
+      <h1 class="form-title">Create account</h1>
+      <form method="dialog" action="#" class="autorization">
+        <div class="form__block">
+          <label for="emailRegister" class="label-text">E-mail</label>
+          <input type="email" id="emailRegister" name="email" placeholder="bbbb@gmail.com" required class="block-input">
+        </div>
+        <div class="form__block">
+          <label for="passwordRegister" class="label-text">Password</label>
+          <input type="password" id="passwordRegister" name="password" placeholder="password" required
+            class="block-input">
+        </div>
+        <div class="button-form">
+          <button class="button-input button" type="submit">Sign Up</button>
+        </div>
+      </form>
+      <div class="line-register--solid"></div>
+      <div class="login-have">
+        <p>Already have an account?<a href="#" onclick="switchToLogin(event)" class="login-transition">Log in</a></p>
+      </div>
+    </div>
+  </dialog>
+  <main>
+    <div class=" container">
+      <section id="steps" class="steps">
+        <h2 class="steps-title h2-title">3 STEPS TO THE PERFECT TRIP</h2>
+        <div class="steps-bl">
+          <div class="step step-one">
+            <img src="./images/icon1.svg" class="step-img" alt="icon">
+            <p class="step-text step-text-one ">Tell us what you <span>want to do</span></p>
+          </div>
+          <div class="step step-two">
+            <img src="./images/icon2.svg" class="step-img" alt="icon">
+            <p class="step-text">Share us preferable dates</p>
+          </div>
+          <div class="step step-three">
+            <img src="./images/icon3.svg" class="step-img" alt="icon">
+            <p class="step-text">We will give you <span>recommendations</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="destinations" class="destinations">
+      <div class="destinations__h2-title">
+        <h2 class="h2-title">POPULAR DESTINATIONS</h2>
+      </div>
+      <div class="slider-container">
+        <div class="slider owl-carousel owl-theme">
+          <div class="slide-item slide">
+            <h2 class="slide-text">SPAIN</h2>
+            <img src="./images/spain.jpg" alt="spain" class="slide-img">
+          </div>
+          <div class="slide-item slide">
+            <h2 class="slide-text">JAPAN</h2>
+            <img src="./images/japan.jpg" alt="japan" class="slide-img">
+          </div>
+          <div class="slide-item slide">
+            <h2 class="slide-text">USA</h2>
+            <img src="./images/usa.jpg" alt="usa" class="slide-img">
+          </div>
+          <div class="slide-item slide">
+            <h2 class="slide-text">FRANSE</h2>
+            <img src="./images/franse.jpg" alt="franse" class="slide-img">
+          </div>
+          <div class="slide-item slide">
+            <h2 class="slide-text">ITALY</h2>
+            <img src="./images/italy.jpg" alt="italy" class="slide-img">
+          </div>
+        </div>
+      </div>
+      <div class="destinations__button-link">
+        <a href="#" class="button-link button">
+          <img src="./images/icon4.svg" alt="icon" class="icon">
+          Find More
+        </a>
+      </div>
+    </section>
+    <section id="travel-stories" class="stories">
+      <div class="container">
+        <div class="stories-title">
+          <h2 class="stories__title h2-title">TRAVEL STORIES</h2>
+        </div>
+        <div class="stories-items">
+          <div class="stories__item trevel-storie">
+            <img src="./images/storie_01.jpg" alt="Thailand" class="storie-img">
+            <div class="storie-content">
+              <div class="storie-title">
+                <h3 class="h3-title">10 Photos of Attractive Thailand</h3>
+              </div>
+              <div class="storie-text">
+                <div class="">
+                  <p class="storie-text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.Lorem
+                    ipsum dolor sit
+                    amet, consectetur adipiscing elit...
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <a href="#" class="storie-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="stories__item trevel-storie">
+            <img src="./images/storie_02.jpg" alt="National Park, Utah" class="storie-img">
+            <div class="storie-content">
+              <div class="storie-title">
+                <h3 class="h3-title">Canyonlands National Park, Utah</h3>
+              </div>
+              <div class="storie-text">
+                <div class="">
+                  <p class="storie-text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.Lorem
+                    ipsum dolor sit
+                    amet, consectetur adipiscing elit...
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <a href="#" class="storie-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="stories__item trevel-storie">
+            <img src="./images/storie_03.jpg" alt="Mountains" class="storie-img">
+            <div class="storie-content">
+              <div class="storie-title">
+                <h3 class="h3-title">I left my heart in the Mountains!</h3>
+              </div>
+              <div class="storie-text">
+                <div class="">
+                  <p class="storie-text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.Lorem
+                    ipsum dolor sit
+                    amet, consectetur adipiscing elit...
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <a href="#" class="storie-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="stories__item trevel-storie">
+            <img src="./images/storie_04.jpg" alt="Longest" class="storie-img">
+            <div class="storie-content">
+              <div class="storie-title">
+                <h3 class="h3-title">The Longest journey in my life!</h3>
+              </div>
+              <div class="storie-text">
+                <div class="">
+                  <p class="storie-text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    laborum.Lorem
+                    ipsum dolor sit
+                    amet, consectetur adipiscing elit...
+                  </p>
+                </div>
+              </div>
+              <div class="">
+                <a href="#" class="storie-link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="stories__button-link">
+            <a href="#" class="button-link button">
+              <img src="./images/icon4.svg" alt="icon" class="icon">
+              See More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-information">
+        <div class="rights">
+          <p class="rights-text">All Rights Reserved © Travel Portal</p>
+        </div>
+        <div id="social-media" class="social-networks">
+          <a href="#"><img src="./images/icon_social_01.svg" alt="" class="social-icon"></a>
+          <a href="#"><img src="./images/icon_social_02.svg" alt="" class="social-icon"></a>
+          <a href="#"><img src="./images/icon_social_03.svg" alt="" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="fon__img">
+    <img src="./images/fon_2.jpg" alt="Fon" class="fon-img">
+    <img src="./images/fon_2_mobail.jpg" alt="Fon" class="fon__img-mobail">
+  </div>
+
+  <dialog id="menuMobail">
+    <div class="menu-mobail">
+      <button class="button-mobail" type="button" onclick="window['menuMobail'].close()">
+        <img src="./images/btn_modal_mobail.svg" alt="" class="button-mobail__btn">
+      </button>
+      <div class="nav__menu-mobail">
+        <ul class="list-mobail">
+          <li class="link-mobail" onclick="window['menuMobail'].close()"><a href="#" >How It Works</a></li>
+          <li class="link-mobail" onclick="window['menuMobail'].close()"><a href="#steps">Plan Your Trip</a></li>
+          <li class="link-mobail" onclick="window['menuMobail'].close()"><a href="#destinations">Destinations</a></li>
+          <li class="link-mobail" onclick="window['menuMobail'].close()"><a href="#travel-stories">Travel Stories</a></li>
+          <li class="link-mobail" onclick="window['loginModal'].showModal(); openLogin()"><a href="#" onclick="window['menuMobail'].close()">Account</a></li>
+          <li class="link-mobail" onclick="window['menuMobail'].close()"><a href="#social-media">Social Media</a></li>
+        </ul>
+      </div>
+     
+    </div>
+  </dialog>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/modal.js"></script>
+</body>
+
+</html>

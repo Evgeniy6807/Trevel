@@ -1,0 +1,229 @@
+@media screen and (min-width: 1441px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    html {
+        font-size: 112.5%;
+    }
+
+    .container {
+        max-width: 80rem;
+    }
+
+    .header-bottom {
+        margin-top: 3rem;
+    }
+
+    .destination {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .fon__img {
+        height: 75rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 75%;
+    }
+
+    .container {
+        padding: 0 1.34rem;
+    }
+
+    .header-bottom {
+        margin-top: 20rem;
+    }
+
+    .h3-title {
+        font-size: 2rem;
+    }
+
+    .fon__img {
+        height: 106rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        height: 20.92rem;
+    }
+
+    .logo-text,
+    .header-list,
+    .header__button,
+    .header-title,
+    .header-text {
+        display: none;
+    }
+
+    .headr-top_big {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .header-top {
+        padding: 3.58rem 0 0;
+    }
+
+    .menu-burger {
+        display: block;
+    }
+
+    .header-bottom {
+        margin-top: 5.58rem;
+    }
+
+    .header-dia {
+        padding: 0.75rem 0.75rem 0.75rem 1.38rem;
+        border-radius: 1.33rem;
+    }
+
+    .text-dia {
+        margin: 0;
+        font-size: 0.92rem;
+    }
+
+    .dia-bt {
+        font-size: 0.92rem;
+    }
+
+    .steps {
+        margin-top: 1.33rem;
+        row-gap: 1.33rem;
+    }
+
+    .h2-title {
+        font-size: 1.17rem;
+    }
+
+    .step {
+        row-gap: 1.58rem;
+    }
+
+    .step-img {
+        width: 5.83rem;
+        height: 5.83rem;
+    }
+
+    .step-text {
+        font-size: 0.83rem;
+    }
+
+    .step-text-one {
+        text-align: left;
+    }
+
+    span {
+        display: block;
+    }
+
+    .destinations {
+        margin-top: 1.67rem;
+    }
+
+    .destinations__h2-title {
+        margin-bottom: 1.67rem;
+    }
+
+    .owl-item {
+        width: 30rem !important;
+        /* Фиксированная доля для 3 слайдов */
+        flex: 0 0 30rem !important;
+        /* Не растягивается */
+    }
+
+    .slide-img {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 1rem;
+    }
+
+    .slide-text {
+        position: absolute;
+        top: 0.67rem;
+        left: 1.25rem;
+        font-size: 1.67rem;
+    }
+
+    .destinations__button-link {
+        margin-top: 1.67rem;
+    }
+
+    .button-link {
+        padding: 0.625rem 1rem;
+        column-gap: 0.5rem;
+        font-size: 0.92rem;
+        box-shadow: 0 0 3px rgb(13, 96, 111, 0.08);
+        box-shadow: 0 0.17rem 3px rgb(13, 96, 111, 0.16);
+    }
+
+    .icon {
+        width: 0.83rem;
+        height: 0.83rem;
+    }
+
+    .stories {
+        margin-top: 1.67rem;
+        padding-bottom: 1.08rem;
+        background-color: rgb(255, 255, 255, 0.7);
+    }
+
+    .stories__title {
+        margin-bottom: 0.83rem;
+        font-size: 1.17rem;
+    }
+
+    .trevel-storie {
+        column-gap: 0.83rem;
+    }
+
+    .storie-img {
+        width: 12.92rem;
+        height: 10.83rem;
+    }
+
+    .h3-title {
+        font-size: 0.92rem;
+    }
+
+    .storie-text__content {
+        font-size: 0.75rem;
+        height: 6.5rem;
+    }
+
+    .storie-link {
+        font-size: 0.75rem;
+    }
+
+    .footer-information {
+        padding: 1.25rem 0;
+        justify-content: center;
+    }
+
+    .rights-text {
+        display: none;
+    }
+
+    .social-networks {
+        column-gap: 1.67rem;
+    }
+
+    .fon__img {
+        height: 60rem;
+    }
+
+    .fon-img {
+        display: none;
+    }
+
+    .fon__img-mobail {
+        display: block;
+    }
+}
