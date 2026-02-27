@@ -352,7 +352,7 @@ dialog::backdrop {
   width: 13.75rem;
   height: 20.83rem;
   top: 6.75rem;
-  left: 1000%;
+  left: 100%;
   transform: translate(-15rem, 0); 
   border-radius: 0.83rem;
   background-color: #F2785C;
@@ -604,5 +604,6 @@ dialog::backdrop {
   object-fit: cover;
 
 }
+
 
 
