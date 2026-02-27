@@ -78,6 +78,10 @@
         display: block;
     }
 
+    .header__button-mobile {
+        display: block;
+    }
+
     .header-bottom {
         margin-top: 5.58rem;
     }
@@ -266,6 +270,7 @@
         /* Не растягивается */
     }
 }
+
 
 
 
