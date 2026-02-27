@@ -74,7 +74,7 @@
         padding: 3.58rem 0 0;
     }
 
-    .header__button-mobile {
+    .menu-burger {
         display: block;
     }
 
@@ -266,4 +266,5 @@
         /* Не растягивается */
     }
 }
+
 
