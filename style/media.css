@@ -235,6 +235,20 @@
 
 }
 
+@media (max-width: 390px) {
+    .slide-img {
+        width: 22.5rem;
+        height: 22.5rem;
+    }
+
+    .owl-item {
+        width: 22.5rem !important;
+        /* Фиксированная доля для 3 слайдов */
+        flex: 0 0 22.5rem !important;
+        /* Не растягивается */
+    }
+}
+
 @media (max-height: 650px) {
     .header-bottom {
         margin-top: 2rem;
@@ -270,6 +284,7 @@
         /* Не растягивается */
     }
 }
+
 
 
 
