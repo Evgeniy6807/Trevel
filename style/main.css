@@ -90,7 +90,7 @@ body {
   max-width: 55.75rem;
 }
 
-.header__button-mobile {
+.menu-burger {
   display: none;
 }
 
@@ -604,3 +604,4 @@ dialog::backdrop {
   object-fit: cover;
 
 }
+
