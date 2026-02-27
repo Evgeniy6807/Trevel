@@ -32,6 +32,8 @@
         font-size: 75%;
     }
 
+    
+
     .container {
         padding: 0 1.34rem;
     }
@@ -225,5 +227,42 @@
 
     .fon__img-mobail {
         display: block;
+    }
+
+}
+
+@media (max-height: 650px) {
+    .header-bottom {
+        margin-top: 2rem;
+    }
+
+    .slide-img {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .owl-item {
+        width: 30rem !important;
+        /* Фиксированная доля для 3 слайдов */
+        flex: 0 0 30rem !important;
+        /* Не растягивается */
+    }
+}
+
+@media (max-height: 450px) {
+    .header {
+        height: 450px;
+    }
+
+    .slide-img {
+        width: 22.5rem;
+        height: 22.5rem;
+    }
+
+    .owl-item {
+        width: 22.5rem !important;
+        /* Фиксированная доля для 3 слайдов */
+        flex: 0 0 22.5rem !important;
+        /* Не растягивается */
     }
 }
